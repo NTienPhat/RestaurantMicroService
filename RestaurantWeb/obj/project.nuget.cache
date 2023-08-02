@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "Ui7UVtdhV7LXbj77bHUZD3C/PJeANfNWd42Vf65K+/AlnQvLN8R8MJm9Vsj8xrzFKuNFDth/okpqpYlsijYJ9Q==",
+  "success": true,
+  "projectFilePath": "E:\\.NET\\RestaurantMicroServices\\RestaurantWeb\\RestaurantWeb.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\user\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
