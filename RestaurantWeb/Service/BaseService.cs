@@ -2,6 +2,7 @@
 using RestaurantWeb.Models;
 using RestaurantWeb.Service.IService;
 using System.Net;
+using System.Text;
 using static RestaurantWeb.Utility.SD;
 
 namespace RestaurantWeb.Service
@@ -21,12 +22,12 @@ namespace RestaurantWeb.Service
             {
                 HttpClient client = _httpClientFactory.CreateClient("RestaurantAPI");
                 HttpRequestMessage message = new();
-                message.Headers.Add("Content-Type", "application/json");
+                message.Headers.Add("Accept", "application/json");
 
                 message.RequestUri = new Uri(requestDTO.Url);
                 if (requestDTO != null)
                 {
-                    message.Content = new StringContent(JsonConvert.SerializeObject(requestDTO.Data));
+                    message.Content = new StringContent(JsonConvert.SerializeObject(requestDTO.Data), Encoding.UTF8,"application/json");
                 }
 
                 HttpResponseMessage? apiResponse = null;

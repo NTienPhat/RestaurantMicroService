@@ -8,7 +8,8 @@ using System.Globalization;
 
 namespace Services.CouponAPI.Controllers
 {
-    [Route("api/[controller]")]
+    //[Route("api/[controller]")]
+    [Route("api/coupon")]
     [ApiController]
     public class CouponAPIController : ControllerBase
     {
@@ -110,6 +111,7 @@ namespace Services.CouponAPI.Controllers
         }
 
         [HttpDelete]
+        [Route("{id:int}")]
         public ResponseDTO Delete(int id)
         {
             try
